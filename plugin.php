@@ -10,7 +10,7 @@ use \Firebase\JWT\JWT as JWT_Wrapper;
  */
 class Talk_JWT {
 
-	use Singleton;
+  use Singleton;
 
   private $key;
 
