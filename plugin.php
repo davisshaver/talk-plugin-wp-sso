@@ -1,19 +1,14 @@
 <?php
 /**
- * JvWT integrations.
- *
- * @package Terminal
+ * JWT_Talk integrations.
  */
-
-
-namespace Terminal;
 
 use \Firebase\JWT\JWT as JWT_Wrapper;
 
 /**
  * Class wrapper for JWT tokens.
  */
-class JWT {
+class JWT_Talk {
 
 	use Singleton;
 
@@ -58,4 +53,4 @@ class JWT {
 }
 
 
-add_action( 'after_setup_theme', [ '\Terminal\JWT', 'instance' ] );
+add_action( 'after_setup_theme', [ '\Terminal\JWT_Talk', 'instance' ] );
